@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.furkancetin.parksolutions.parksolutions.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/firstPanel"
+        android:layout_marginBottom="265dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/box_title"
+            android:id="@+id/box_title"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="25dp"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:id="@+id/park_green"
+            android:background="@drawable/park_green"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="15dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:id="@+id/park_red"
+            android:background="@drawable/park_red"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="15dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignTop="@+id/firstPanel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="268dp"
+        android:id="@+id/secondPanel"
+        android:background="@color/colorAccent"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/panel_text_1"
+            android:id="@+id/panel_text_1"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/panel_text_2"
+            android:id="@+id/panel_text_2"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="55dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/available_places"
+            android:id="@+id/available_places"
+            android:layout_gravity="left|top"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:textSize="35dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/available_places_total"
+            android:id="@+id/available_places_total"
+            android:layout_gravity="right|top"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:textSize="35dp"
+            android:layout_marginRight="30dp" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="@string/park_request"
+        android:id="@+id/park_request_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/secondPanel"
+        android:layout_alignEnd="@+id/secondPanel"
+        android:clickable="true"
+        android:background="@color/colorAccent"
+        android:enabled="true"
+        android:textSize="20dp" />
+
+    <!--android:layout_alignRight="@+id/frameLayout"-->
+    <!--android:layout_alignEnd="@+id/frameLayout"-->
+</RelativeLayout>

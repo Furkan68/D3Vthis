@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Park Solutions</string>
+
+    <string name="dialog_internet_title">Internet</string>
+    <string name="dialog_internet_text">U heeft geen internet verbinding...</string>
+
+    <string name="box_title">Beschikbaarheid</string>
+
+    <string name="park_available">Beschikbaar</string>
+    <string name="park_unavailable">Bezet</string>
+
+
+    <string name="panel_description">
+        Uw straat is nogal druk op dit moment
+    </string>
+
+    <string name="panel_text_1">Aantal beschikbare plekken : </string>
+    <string name="available_places">0</string>
+
+    <string name="panel_text_2">van de </string>
+    <string name="available_places_total">40</string>
+
+    <string name="gcm_defaultSenderId">284496762243</string>
+    <string name="park_request">Ik wil parkeren!</string>
+
+    <string name="ok">JA</string>
+    <string name="cancel">NEE</string>
+
+    <string name="dialog_message">Wilt u parkeren?</string>
+    <string name="dialog_title">Parkeren</string>
+</resources>
